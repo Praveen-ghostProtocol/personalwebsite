@@ -1,0 +1,11 @@
+node_modules/
+.backups/
+dist/
+dist-public/
+dist-draft/
+.vercel/
+.private/
+tmp/
+.env*
+*.pem
+*.log
