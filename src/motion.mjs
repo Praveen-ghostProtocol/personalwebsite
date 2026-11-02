@@ -15,7 +15,7 @@ if (typeof document !== "undefined") {
   );
   const reveals = [
     ...document.querySelectorAll(
-      ".startup-story, .startup-note, .section-title, .life-copy, .project-row, .achievement, .experience-preview article, .experience-list article, .case-prose > section, .life-statement, main .photo",
+      ".startup-story, .startup-note, .section-title, .life-copy, .project-row, .achievement, .competition-highlight, .experience-preview article, .experience-list article, .case-prose > section, .life-statement, main .photo",
     ),
   ].filter((element) => !element.closest(".hub-portrait"));
   let paused = false;

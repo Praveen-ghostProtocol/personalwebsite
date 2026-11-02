@@ -37,19 +37,19 @@ export const projects = [
     reviewed: "2026-11-01",
     publication: "approved",
     summary:
-      "Linked notes that make personal context easier to organise and reuse. Select what matters, export it as Markdown, or use optional AI assistance to develop notes and summaries.",
+      "A notes tool for finding and reusing the context behind an idea. Linked notes and Markdown export are built; the next step is testing whether that structure helps in everyday use.",
     body: [
       {
-        title: "Keeping the context around an idea",
+        title: "The problem: keeping context together",
         paragraphs: [
-          "Weave connects notes through hierarchical parent links and related-note links. It is a way to organise personal context so it can be selected and reused, rather than rewritten each time.",
+          "An idea can depend on details spread across several notes. Weave explores whether keeping those connections visible makes that context easier to find and reuse, rather than reconstructing it each time.",
         ],
       },
       {
-        title: "What is built",
+        title: "Carry the connections with the note",
         paragraphs: [
-          "Notes are stored locally in the browser using IndexedDB. A selected group of notes can be exported as Markdown, with its parent notes and one-hop related notes included.",
-          "Optional AI flows can ask questions, offer choices or accept free text to help develop a note or a first-person summary.",
+          "Parent links capture the broader context; related-note links connect neighbouring ideas. Markdown export includes the selected notes, their parents and directly related notes, so the context can travel with them.",
+          "Those linking and export flows are built. Optional AI assistance can help develop a note or summary through questions, choices and free-text responses.",
         ],
       },
       {
@@ -104,7 +104,7 @@ export const projects = [
     reviewed: "2026-11-01",
     publication: "approved",
     summary:
-      "An early-stage project exploring how verified students could find and exchange used books on campus. The account, catalogue and listing foundations are built; discovery, messaging and demand validation are next.",
+      "BookHop explores whether a campus book exchange can make discovery easier than existing groups. Accounts and listings are built; student interviews and a test of discovery and messaging come next.",
     body: [
       {
         title: "A campus-sized starting point",
@@ -114,16 +114,16 @@ export const projects = [
         ],
       },
       {
-        title: "The foundations and the boundary",
+        title: "Build enough to test the exchange",
         paragraphs: [
-          "Foundations for accounts, age gating, campus verification, consent and deletion, a catalogue, listings and wanted requests are implemented. Discovery, messaging and a campus pilot are the next steps.",
+          "Accounts, campus verification, a book catalogue, listings and wanted requests are implemented, alongside age gating, consent and deletion. Discovery and messaging are next, to test how students find a book and arrange an exchange.",
           "A browse-and-message test with a small group of friends is planned, with transactions disabled. It has not yet happened.",
         ],
       },
       {
         title: "Decisions with trade-offs",
         paragraphs: [
-          "The application uses Django and PostgreSQL with server-rendered HTML. This keeps the initial implementation focused on the account, catalogue and listing flows.",
+          "The initial scope is a few campuses with in-person exchanges. The application uses Django, PostgreSQL and server-rendered pages to support the account, catalogue and listing flows.",
           "Student access is intended to be free. Institutional payment is an untested payer hypothesis. BookHop does not propose escrow, payment custody or processing student transaction payments.",
         ],
       },
@@ -531,18 +531,18 @@ export const hubChapters = [
     position: "startup",
   },
   {
-    key: "projects",
-    label: "Side projects",
-    detail: "Weave & BookHop",
-    href: "#side-projects",
-    position: "projects",
-  },
-  {
     key: "experience",
     label: "Professional experience",
     detail: "Founder’s office & engineering",
     href: "#experience",
     position: "experience",
+  },
+  {
+    key: "projects",
+    label: "Side projects",
+    detail: "Weave & BookHop",
+    href: "#side-projects",
+    position: "projects",
   },
   {
     key: "cricket",

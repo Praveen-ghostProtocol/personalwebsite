@@ -18,6 +18,16 @@ test("portrait hub provides six real destinations and leads with the startup", (
   assert(
     html.indexOf('id="entrepreneurship"') < html.indexOf('id="side-projects"'),
   );
+  assert(
+    html.indexOf('id="entrepreneurship"') < html.indexOf('id="experience"') &&
+      html.indexOf('id="experience"') < html.indexOf('id="side-projects"'),
+  );
+  assert.match(
+    html,
+    /class="hub-incoming small">Incoming Associate Consultant Intern · Bain &amp; Company · 2027/,
+  );
+  for (const slug of ["great-bengaluru", "stucred", "ceos-summit"])
+    assert(html.includes(`href="/accomplishments/#${slug}"`));
   assert.match(html, /Funded startup/);
   assert.match(html, /id="side-projects"/);
   assert.match(html, /portrait-primary.webp/);
