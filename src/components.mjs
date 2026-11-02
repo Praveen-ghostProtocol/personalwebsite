@@ -148,7 +148,9 @@ export function page({ title, description, path, body, draft }) {
             </p>
             <div class="footer-heading">
               <h2>Let’s talk.</h2>
-              ${link(`mailto:${profile.email}`, profile.email, "email-link")}
+              <div class="footer-contact-links">
+                ${link(`mailto:${profile.email}`, profile.email, "email-link")}${link(`tel:${profile.phone.replace(/\s/g, "")}`, profile.phone, "phone-link")}
+              </div>
             </div>
             <div class="footer-bottom">
               <p>Praveen Kumar S <span>·</span> A few things I’m working on.</p>

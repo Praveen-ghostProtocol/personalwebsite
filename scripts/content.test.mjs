@@ -37,6 +37,8 @@ test("editable strings are escaped and unsafe URLs are rejected", () => {
     "data:text/html,test",
     "https://user:secret@example.com",
     "/\\evil",
+    "tel:+91ABC",
+    "tel:javascript:alert(1)",
   ]) {
     assert.throws(() => safeHref(input));
   }
@@ -44,6 +46,7 @@ test("editable strings are escaped and unsafe URLs are rejected", () => {
     "/work/weave/",
     "https://github.com/Praveen-ghostProtocol",
     "mailto:s4spraveen.2005@gmail.com",
+    "tel:+919108460960",
     "#sports",
   ])
     assert.equal(safeHref(input), input);

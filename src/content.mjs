@@ -10,6 +10,7 @@ export const profile = {
     "With my background and what I’ve learned so far, I want to build a company that matters because it solves a real problem. This site brings together that work, along with competitions, cricket and other parts of my life.",
   ],
   email: "s4spraveen.2005@gmail.com",
+  phone: "+91 9108460960",
   linkedin: "https://www.linkedin.com/in/s4spraveen/",
   github: "https://github.com/Praveen-ghostProtocol",
   portrait: {

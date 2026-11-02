@@ -70,6 +70,7 @@ export interface Profile {
   intro: string;
   story: string[];
   email: string;
+  phone: string;
   linkedin: string;
   github: string;
   portrait: Media;

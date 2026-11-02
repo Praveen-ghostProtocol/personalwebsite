@@ -544,6 +544,19 @@ footer {
   overflow-wrap: anywhere;
   min-height: 44px;
 }
+.footer-contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.phone-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  font-size: clamp(0.9375rem, 1.3vw, 1.125rem);
+}
 .footer-bottom {
   display: flex;
   flex-wrap: wrap;

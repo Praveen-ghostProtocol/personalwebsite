@@ -173,7 +173,7 @@ export function about(draft) {
       </p>
       ${profile.resume && (draft || profile.resume.publication === "approved") ? artifactLink(profile.resume) : ""}
       <div class="profile-links">
-        ${link(profile.linkedin, "LinkedIn")}${link(profile.github, "GitHub")}${link(`mailto:${profile.email}`, "Email me")}
+        ${link(profile.linkedin, "LinkedIn")}${link(profile.github, "GitHub")}${link(`mailto:${profile.email}`, "Email me")}${link(`tel:${profile.phone.replace(/\s/g, "")}`, profile.phone)}
       </div>
     </section>`;
 }

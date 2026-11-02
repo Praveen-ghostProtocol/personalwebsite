@@ -35,6 +35,7 @@ export function escapeHtml(value) {
 
 /** @param {string} value */
 export function safeHref(value) {
+  if (/^tel:\+[1-9]\d{6,14}$/.test(value)) return value;
   if (/^#[\w-]+$/.test(value)) return value;
   if (/^\/(?!\/)[a-zA-Z0-9/_.#-]*$/.test(value) && !value.includes(".."))
     return value;
