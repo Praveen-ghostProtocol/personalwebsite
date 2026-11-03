@@ -91,7 +91,13 @@ export const projects = [
         publication: "draft",
       },
     ],
-    links: [],
+    links: [
+      {
+        label: "View Weave on GitHub",
+        href: "https://github.com/Praveen-ghostProtocol/Weave",
+        publication: "approved",
+      },
+    ],
   },
   {
     title: "BookHop",
@@ -153,7 +159,13 @@ export const projects = [
         publication: "draft",
       },
     ],
-    links: [],
+    links: [
+      {
+        label: "View BookHop on GitHub",
+        href: "https://github.com/Praveen-ghostProtocol/Bookhop",
+        publication: "approved",
+      },
+    ],
   },
   {
     title: "Optimus",
