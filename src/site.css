@@ -55,6 +55,9 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
+.site-header:focus {
+  outline: none;
+}
 ::selection {
   background: var(--accent);
   color: var(--paper);
@@ -563,7 +566,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  padding-block: 1.5rem 2rem;
+  padding-block: 1.5rem 5rem;
   border-top: 1px solid var(--rule);
   font-size: 0.6875rem;
   color: var(--muted);
@@ -584,10 +587,31 @@ footer {
   border: 0;
 }
 .back-top {
-  min-height: 44px;
+  min-height: 48px;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.75rem 1.125rem;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.4;
   text-decoration: none;
+}
+.back-top:hover {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--paper);
+}
+.back-top span {
+  transition: transform 0.2s;
+}
+.back-top:hover span,
+.back-top:focus-visible span {
+  transform: translateY(-3px);
 }
 .page-intro {
   padding-block: 4.5rem 4rem;

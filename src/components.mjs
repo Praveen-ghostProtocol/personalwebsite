@@ -130,7 +130,7 @@ export function page({ title, description, path, body, draft }) {
         <div class="reading-progress" aria-hidden="true"></div>
         <a class="skip-link" href="#main">Skip to content</a>
         <div class="site-shell">
-          <header class="site-header">
+          <header id="top" class="site-header" tabindex="-1">
             <a class="wordmark" href="/" aria-label="Praveen Kumar S, home"
               >pk<span aria-hidden="true">.</span></a
             >
@@ -164,7 +164,9 @@ export function page({ title, description, path, body, draft }) {
                 hidden
               >
                 Pause motion</button
-              ><a class="back-top" href="#main">Back to top ↑</a>
+              ><a class="back-top" href="#top"
+                >Back to top <span aria-hidden="true">↑</span></a
+              >
             </div>
           </footer>
         </div>
